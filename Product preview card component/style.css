@@ -1,0 +1,126 @@
+body{
+    color:#AEAFB6;
+    margin:0;
+    background-color: #f3eae3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+button{
+    background-color: #3d8168;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-top:30px;
+    border-radius: 10px;
+    width: 375px;
+    height:auto;
+    background-color: white;
+}
+
+.card-image{
+    background: url("images/image-product-mobile.jpg") no-repeat top center;
+    background-size:100%;
+    min-height:230px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.description{
+    margin:30px;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: .05rem;
+
+}
+
+.prices{
+    display: flex;
+    max-height: 80px;
+    margin: 10px 15px;
+    gap:20px;
+    
+    align-items: center;
+}
+
+.item-description{
+    line-height: 1.6;
+}
+.current-price{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    margin: 0;
+    color:#3D8168;
+    font-weight:bold;
+}
+
+.previous-price{
+    text-decoration: line-through;
+}
+
+button{
+    border:none;
+    display: flex;
+    width:95%;
+    margin:auto;
+    justify-content: center;
+    border-radius:10px;
+}
+button .favicon{
+    object-fit: contain;
+    height: auto;
+
+}
+
+button .Button-text{
+    color:white;
+    margin-left: 10px;
+}
+
+button:active{
+    background-color: rgba(26,64,49,255);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.item-name{
+    font-family: 'Fraunces', serif;
+    color:black;
+    font-size: 35px;
+    margin:0;
+    font-weight:bold;
+}
+
+.item-type{
+    letter-spacing: .45rem;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .card{
+        display: flex;
+        width: 600px;
+    }
+
+    .card-image{
+        background: url("images/image-product-desktop.jpg") no-repeat;
+        background-size: cover;
+        width: 50%;
+        border-radius: 10px 0 0 10px;
+    }
+    .description{
+        width: 50%;;
+    }
+
+    .item-name{
+        margin-right:30px;
+    }
+
+}
