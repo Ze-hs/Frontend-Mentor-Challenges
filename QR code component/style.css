@@ -1,0 +1,111 @@
+:root{
+  --clr-neutral-300:hsl(212, 45%, 89%);
+  --clr-neutral-100:hsl(0, 0%, 100%);
+
+  --clr-primary-400:hsl(220, 15%, 55%);
+  --clr-primary-800:hsl(218, 44%, 22%);
+
+  --ff-base:'Outfit', sans-serif;
+  --fw-regular:400;
+  --fw-bold:700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+
+
+/* General Styles*/
+body{
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  background-color:var(--clr-neutral-300);
+  color:var(--clr-primary-400);
+
+  display:grid;
+  place-content: center;
+
+  line-height: 1.2rem;
+
+}
+
+.card{
+  --content-padding-side:1rem;
+  --content-padding-top:1.2rem;
+
+  border-radius: 1.25rem;
+  overflow:hidden;
+  padding:var(--content-padding-side);
+  background-color:var(--clr-neutral-100);
+  margin:1.5rem;
+  max-width: 325px;
+}
+
+.card__img{
+  border-radius: 1rem;
+  overflow:hidden;
+}
+
+.card__title{
+  color:var(--clr-primary-800);
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.card__content{
+  padding:var(--content-padding-top);
+  display: grid;
+  gap:1.1rem;
+}
+
+.card__description{
+  text-align: center;
+}
