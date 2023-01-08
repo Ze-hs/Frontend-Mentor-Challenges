@@ -82,10 +82,13 @@ body{
 
   border-radius: 1.25rem;
   overflow:hidden;
+
   padding:var(--content-padding-side);
   background-color:var(--clr-neutral-100);
   margin:1.5rem;
   max-width: 325px;
+
+  box-shadow: -1rem 1rem 1.5rem .25rem rgba(0, 0, 0, 0.07);
 }
 
 .card__img{
